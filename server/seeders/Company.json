@@ -1,0 +1,32 @@
+[
+    {
+      "Name": "Logical Choice Enterprises",
+      "ProfilePicture": "companyphoto1",
+      "CompanyDescription": "Our experienced staff includes business analysts, technology analysts, customer support technicians and software developers. We are dedicated to continually helping our clients augment their           collaborative behavior by providing insight, assistance and leading technology solutions created to increase the ability of individuals and organizations to meet their commitments.",
+      "Address": "14519 Datapoint Drive, San Antonio, Texas 78272",
+      "Email": "logicalchoiceenterprises@gmail.com",
+      "Password": "@Comppwd01",
+      "PhoneNumber": "210-828-4655",
+      "Postings": ["Web Developer Front End", "Front End Developer"]
+    },
+    {
+      "Name": "Knight Industries",
+      "ProfilePicture": "companyphoto2",
+      "CompanyDescription": "We are expanding our web database and applications group. Are you the person to take us to the next level in database and programming knowledge? You will develop new web applications as well as support existing ones. We live by a very simple set of rules: Do the right thing, Respect others, Be responsible, Achieve excellence, Improve and grow, Communicate and collaborate.",
+      "Address": "19967 Executive Circle, Austin, Texas 78660",
+      "Email": "mkindustries@yahoo.com",
+      "Password": "#Comppwd02",
+      "PhoneNumber": "512-787-3483",
+      "Postings": ["Java Full Stack Developer Back End Focus", "Software Developer"]
+    },
+    {
+      "Name": "RZS Technology Inc",
+      "ProfilePicture": "companyphoto3",
+      "CompanyDescription": "Join us to drive positive, lasting change that moves missions forward! Do the work you love in an inclusive, collaborative, and caring community, where you can be empowered to grow, learn and thrive through hands-on experience, certifications, industry training and more.",
+      "Address": "21248 Development Drive, San Antonio, Texas 78238",
+      "Email": "rzstechnologyinc@gmail.com",
+      "Password": "Comppwd03!",
+      "PhoneNumber": "210-867-5309",
+      "Postings": ["AS 400 / RPG Application Developer", "Technology Manager Web Developer"]
+    }
+  ]

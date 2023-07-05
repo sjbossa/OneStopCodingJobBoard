@@ -1,0 +1,68 @@
+[
+    {
+      "JobTitle": "AS 400 / RPG Application Developer",
+      "JobType": ["Full-time", "Shift and Schedule"],
+      "Skill": ["Microsoft Visual Studio", "Microsoft .NET tools", "Java/VB Script", "Microsoft SQL Server development", "HTML programming", "Intranet/Internet site development"],
+      "MinimumEducation": "4 years",
+      "Salary": "From $110,000.00 per year",
+      "Shift": ["8 hour shift", "Monday to Friday"],
+      "DateCreatd": "07/03/2023",
+      "RemoteWork": "False",
+      "Industry": "Software Development"
+    },
+    {
+      "JobTitle": "Software Developer",
+      "JobType": "Contract",
+      "Skill": ["Vue.js", "Node JS", "HTML5", "CSS", "Review of Code and Design Knowledge"],
+      "MinimumEducation": ["4 years", "Certification"],
+      "Salary": "$72,600.00 per year",
+      "Shift": ["8 hour shift", "Monday to Friday"],
+      "DateCreated": "06/30/2023",
+      "RemoteWork": "True",
+      "Industry": "Information Technology"
+    },
+    {
+      "JobTitle": "Front End Developer",
+      "JobType": ["Full-time", "Shift and Schedule"],
+      "Skill": ["Java/VB Script", "Microsoft SQL Server development", "CSS programming", "HTML programming", "Intranet/Internet site development"],
+      "MinimumEducation": "BA Computer Science or related field",
+      "Salary": "From $96,800.00 per year",
+      "Shift": ["8 hour shift", "Monday to Friday"],
+      "DateCreated": "07/01/2023",
+      "RemoteWork": "True",
+      "Industry": "Software Development"
+    },
+    {
+      "JobTitle": "Web Developer Front End",
+      "JobType": "Full-time",
+      "Skill": ["HTML programming", "CSS/SCSS programming", "Java/VB Script programming", "Experience with responsive web design"],
+      "MinimumEducation": "3 to 5 years of experience in front-end coding and or other coding disciplines",
+      "Salary": "From $88,600.00 per year",
+      "Shift": ["8 hour shift", "Monday to Friday"],
+      "DateCreated": "07/01/2023",
+      "RemoteWork": "True",
+      "Industry": "Web Development"
+    },
+    {
+      "JobTitle": "Technology Manager Web Developer",
+      "JobType": ["Full-time", "Shift and Schedule"],
+      "Skill": ["Critical thinking and reasoning to solve problems", "Ability to focus on a goal and achieve results", "Perform work accurately and thoroughly"],
+      "MinimumEducation": ["Bachelor's degree in computer science", "Web development or related and five years work experience in web development", "any equivalent combination of education and experience."],
+      "Salary": "From $84,800.00 per year",
+      "Shift": ["8 hour shift", "Monday to Friday"],
+      "DateCreated": "07/05/2023",
+      "RemoteWork": "False",
+      "Industry": "Software Development"
+    },
+    {
+      "JobTitle": "Java Full Stack Developer Back End Focus",
+      "JobType": ["Full-time", "Shift and Schedule"],
+      "Skill": ["Knowledge of Java development language", "SQL Database experience", "knowledge using restful web services"],
+      "MinimumEducation": "BA Computer Science",
+      "Salary": "$105,000.00 per year",
+      "Shift": ["8 hour shift", "Monday to Friday"],
+      "DateCreated": "07/03/2023",
+      "RemoteWork": "False",
+      "Industry": "Software Development"
+    }
+  ]
