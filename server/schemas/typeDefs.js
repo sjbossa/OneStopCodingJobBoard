@@ -25,6 +25,7 @@ const typeDefs = gql`
         user(isCompany: Boolean!,  name:String!):User
         job(_id: ID!):Job
         jobs:[Job!]
+        me:User
     }
     
     type Mutation
