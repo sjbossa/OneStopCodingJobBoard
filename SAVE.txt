@@ -2,45 +2,21 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
     
-    type User{
-        _id: ID!
-        isCompany:Boolean!
-        name:String!
-        email:String!
-        password:String
-    }
-    
-    type Job{
-        _id: ID!
-        title:String!
-        description:String!
-    }
-   
-    type Auth {
-        token: ID!
-        profile: User
+    type JobSeeker{
+        ID: ID!
+        Name: String!
+        Description: String
+        ProfilePicture: String
+        Age: Int
+        Email: String!
+        Password: String!
+        PhoneNumber: String
+        Address: String
+        jobsAppliedTo: [JobPosted!]
+        jobsViewed: [JobPosted!]
+        Skills:[Skills!]
     }
 
-   type Query{
-        user(isCompany: Boolean!,  name:String!):User
-        job(_id: ID!):Job
-        jobs:[Job!]
-    }
-    
-    type Mutation
-    {
-        createUser(name:String!, isCompany:Boolean!, password:String!, email:String!): Auth
-        login(email: String!, password:String! ): Auth
-
-        createJob(title:String!, description: String!): Job
-        deleteUser(id: ID!): User
-        deleteJob(id: ID!):Job
-    }
-`;
-
-module.exports = typeDefs;
-
-/*
     type Company{
         companyID: ID!
         Name: String!
@@ -112,5 +88,48 @@ module.exports = typeDefs;
         Aerospace
     }
     
-*/
+    type Query{
+        job(postingID: ID!): JobPosted!
+        jobs: [JobPosted!]!
+        company(Name: String!):Company
+        companies:[Comapny!]!
+        jobseeker(Name: String!): JobSeeker!
+    }
 
+    input createJobSeekerInput{
+        Name: String!
+        Email: String!
+        Password: String!
+    }
+
+    input createCompanyInput{
+        Name: String!
+        ProfilePicture: String!
+        ComapnyDescription: String!
+        Address: String!
+        Email: String!
+        Password: String!
+        PhoneNumber: String!
+    }
+
+    input createJobPostingInput{
+        JobTitle: String!
+        JobType: JobType = "FULLTIME"
+        MinimumEductation:Education = "GED"
+        Salary: Int = 0
+        Shift: Shift = "Standard"
+        DateCreated: Int!
+        RemoteWork: Boolean!
+        Industry: Industry = "Technology"
+    }
+
+    type Mutation
+    {
+        createJobSeeker(input: createJobSeekerInput):JobSeeker
+        createCompany(input: createCompanyInput):Comapny
+        createJobPosting(input: createJobPostingInput): JobPosted
+        deleteJobPosting(postingID: ID!): JobPosted
+    }
+`;
+
+module.exports = typeDefs;

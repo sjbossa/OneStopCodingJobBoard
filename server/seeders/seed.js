@@ -1,17 +1,14 @@
 const db = require('../config/connection');
-const { JobSeeker,JobPosted,Company } = require('../models');
-const JobSeekerJson = require('./JobSeeker.json');
-const JobPostedJson = require('./JobPosted.json');
-const CompanyJson = require('./Company.json');
+const { Job, User} = require('../models');
+const JobJson = require('./Job.json');
+const UserJson = require('./User.json');
 
 db.once('open', async () => {
   try {
-    await JobSeeker.deleteMany({});
-    await JobSeeker.create(JobSeekerJson);
-    await JobPosted.deleteMany({});
-    await JobPosted.create(JobPostedJson);
-    await Company.deleteMany({});
-    await Company.create(CompanyJson);
+    await Job.deleteMany({});
+    await Job.create(JobJson);
+    await User.deleteMany({});
+    await User.create(UserJson);
     console.log('all done!');
     process.exit(0);
   } catch (err) {

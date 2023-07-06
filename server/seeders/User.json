@@ -1,0 +1,20 @@
+[
+  {
+    "isCompany":false,
+    "name":"Rey",
+    "email":"email1@email.com",
+    "password":"123456"
+  },
+  {
+    "isCompany":false,
+    "name":"Rey",
+    "email":"email2@email.com",
+    "password":"123456"
+  },
+  {
+    "isCompany":false,
+    "name":"Rey",
+    "email":"email3@email.com",
+    "password":"123456"
+  }
+  ]
