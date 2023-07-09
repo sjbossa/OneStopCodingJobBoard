@@ -25,3 +25,13 @@ query Jobs {
     title
   }
 }`;
+
+export const QUERY_ME = gql`
+  query me {
+    me {
+        isCompany
+        name
+        email
+    }
+  }
+`;
