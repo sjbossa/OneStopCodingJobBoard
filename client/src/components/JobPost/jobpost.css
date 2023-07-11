@@ -1,0 +1,29 @@
+
+input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2557a9;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+   
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #2557a9;
+    padding-bottom: 40px;
+  }
+  
+  
+  
