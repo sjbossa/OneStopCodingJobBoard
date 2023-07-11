@@ -8,11 +8,11 @@ import Auth from '../utils/auth';
 
 const Signup = () => {
     const [formState, setFormState] = useState({
-      name: '',
+      username: '',
       email: '',
       password: '',
     });
-    const [addProfile, { error, data }] = useMutation(ADD_USER);
+    const [addUser, { error, data }] = useMutation(ADD_USER);
   
     // update state based on form input changes
     const handleChange = (event) => {
@@ -29,11 +29,11 @@ const Signup = () => {
       event.preventDefault();
   
       try {
-        const { data } = await addProfile({
+        const { data } = await addUser({
           variables: { ...formState },
         });
   
-        Auth.login(data.addProfile.token);
+        Auth.login(data.addUser.token);
       } catch (e) {
         console.error(e);
       }
@@ -55,9 +55,9 @@ const Signup = () => {
                   <input
                     className="signup-input"
                     placeholder="Your username"
-                    name="name"
+                    name="username"
                     type="text"
-                    value={formState.name}
+                    value={formState.username}
                     onChange={handleChange}
                   />
                   <input
