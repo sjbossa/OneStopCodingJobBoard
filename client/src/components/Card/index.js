@@ -37,9 +37,16 @@ function Card(props) {
         <p className="card__id">{props.id}</p>
         <p className="card__description">{props.description}</p>
       </div>
-      <button className="card__btn">View Job</button>
+      <button className="card__btn" >View Job</button>
     </div>
   );
 }
 
 export default JobCard;
+/*FUNCTION NAVIGATE()
+{
+  return <Navigate to="/job/${job.id}" />
+}
+
+  <button onclick = {navigate}
+*/

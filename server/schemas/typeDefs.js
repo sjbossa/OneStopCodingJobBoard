@@ -21,7 +21,7 @@ const typeDefs = gql`
 
   type Query {
     jobs: [Job]
-    job(id:ID!): Job
+    job(jobId:ID!): Job
     users: [User]
     user(username:String!): User
     me: User

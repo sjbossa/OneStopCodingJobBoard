@@ -7,8 +7,8 @@ const resolvers = {
     jobs: async () => {
       return await Job.find({});
     },
-    job: async (parent, args) => {
-      return await Job.findById(args.id);
+    job: async (parent, {jobId}) => {
+      return Job.findOne({ _id: jobId });
     },
     users: async () => {
       return await User.find({});

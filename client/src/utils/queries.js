@@ -9,8 +9,8 @@ export const QUERY_USER=gql`
 }`;
 
 export const QUERY_JOB=gql`
-    query singleJob ($_id:ID!) {
-        job(_id:$_id){
+    query singleJob ($jobId:ID!) {
+        job(jobId:$jobId){
             _id
             title
             description
