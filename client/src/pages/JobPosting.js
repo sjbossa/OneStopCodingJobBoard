@@ -8,27 +8,34 @@ import { QUERY_JOB } from '../utils/queries';
 
 
 const JobPosting = () => {
-  const { _id } = useParams();
+  const { jobId } = useParams();
 
   const { loading, data } = useQuery(QUERY_JOB,
     {
-      variables: { _id: _id },
+      variables: { jobId: jobId },
     }
   );
 
-  const job =  data?.profile || {};
+  const job =  data?.job || {};
   console.log(job);
   if (loading) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div>
-        <h1>{job._id}</h1>
-        <h1>{job.description}</h1>
-        <h1>{job.title}</h1>
-    </div>
+  <div>
+    <h1>{job._id}</h1>
+    <h1>{job.description}</h1>
+    <h1>{job.title}</h1>
+    <button>apply now</button>
+  </div>
   );
 };
 
 export default JobPosting;
+
+/*<div>
+<h1>{job._id}</h1>
+<h1>{job.description}</h1>
+<h1>{job.title}</h1>
+//</div>*/

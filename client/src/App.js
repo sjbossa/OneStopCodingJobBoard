@@ -59,7 +59,7 @@ function App() {
             element={<Login />}           
           />
             <Route 
-            path="/job/:_id"
+            path="/job/:jobId"
             element={<JobPosting />}           
           />
         </Routes>
