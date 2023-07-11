@@ -1,11 +1,11 @@
 import { gql } from '@apollo/client'
 export const ADD_USER=gql`
-mutation createUser($name:String!,  $password:String!, $email:String!) {
-    createUser(name:$name,  password:$password, email:$email){
+mutation createUser($username:String!,  $password:String!, $email:String!) {
+    createUser(username:$username,  password:$password, email:$email){
         token
         user{
             _id
-            name
+            username
         } 
     }   
 }`;
@@ -13,9 +13,9 @@ export const LOGIN_USER=gql`
 mutation login($email:String!, $password:String!){
     login(email:$email, password:$password){
         token
-        profile{
+        user{
             _id
-            name
+            username
          }
      }
  }
@@ -40,7 +40,7 @@ export const DELETE_USER=gql`
 mutation deleteUser($id:ID!){
     deleteUser(id:$id){
         _id
-        name
+        username
         email
     }
 }`;
