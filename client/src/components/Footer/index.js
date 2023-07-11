@@ -50,10 +50,9 @@ const Footer=()=>{
                     </p>
                 </div>
                 <div className="sb__footer-below-links">
-                    <a href="/terms"><div><p>Terms and Conditions</p></div></a>
-                    <a href="/privacy"><div><p>Privacy</p></div></a>
-                    <a href="/security"><div><p>Security</p></div></a>
-                    <a href="/cookie"><div><p>Cookie Declaration</p></div></a>
+                    <a href="https://www.termsfeed.com/live/baa7fdbd-5321-4435-b483-4b7aec33af06"><div><p>Terms and Conditions</p></div></a>
+                    <a href="https://www.termsfeed.com/live/81d03c60-9ffd-45f5-b131-6317a14ca81e"><div><p>Privacy</p></div></a>
+                    <a href="https://www.termsfeed.com/live/124b8460-cd11-4c75-ab7d-83419159f998"><div><p>Cookie Declaration</p></div></a>
                 </div>
             </div>
         </div>
