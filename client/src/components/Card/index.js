@@ -20,6 +20,7 @@ const JobCard = ({ jobs, title }) => {
           description={job.description}
           key={job._id}
           id={job._id}
+         
         />
       ))}
 
