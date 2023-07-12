@@ -3,11 +3,11 @@
 }
 
 .footer{
-min-height: 90px;
-  position: relative;
-  left: 0;
+min-height: 100px;
+  position: fixed;
+  left: 64px;
   bottom: 0;
-  width: 100%;
+  width: 93%;
   background-color: #525f72;
   color: white;
   text-align: center;

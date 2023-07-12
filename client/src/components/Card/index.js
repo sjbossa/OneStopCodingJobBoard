@@ -17,9 +17,9 @@ const JobCard = ({ jobs, title }) => {
           
         img={logoImage}
           key={job._id}
-          id={job._id}
           title={job.title}
           description={job.description}
+          id={job._id}
         />
       ))}
 
@@ -39,8 +39,8 @@ function Card(props) {
       <div className="card__body">
         <img className="card__image" src={img} alt="" />
         <h2 className="card__title">{title}</h2>
-        <p className="card__id">{id}</p>
         <p className="card__description">{description}</p>
+        <p className="card__id">{id}</p>
       </div>
       <Link to={`/job/${id}`} className="card__btn">
         View Job
