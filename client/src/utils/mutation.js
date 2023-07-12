@@ -44,3 +44,12 @@ mutation deleteUser($id:ID!){
         email
     }
 }`;
+export const CONTACT_US=gql`
+mutation contactUs($name:String!, $email:String!, $message:String!){
+    contactUs(name:$name, email:$email, message:$message){
+        name
+        email
+	message
+    }
+}`;
+

@@ -33,7 +33,7 @@
    
    .nav-links {
      text-decoration: none;
-     color: #fff;
+     color: #76eef4;
      padding: 0.7rem 1rem;
      white-space: nowrap;
    
@@ -44,7 +44,7 @@
    }
    
    .nav-links:hover {
-     background: #2557a9;
+     background: #1a595d;
      border-radius: 4px;
      transition: all 0,2s ease-in-out;
    }
@@ -61,12 +61,12 @@
    .nav-links-mobile {
      padding: 0.5rem 1rem;
      white-space: nowrap;
-     background-color: #fafafa;
+     background-color: #525f72;
      border-radius: 3px;
      text-decoration: none;
      font-size: 1rem;
      font-weight: 500;
-     color: #222;
+     color: #76eef4;
    }
    
    @media screen and (max-width: 850px) {

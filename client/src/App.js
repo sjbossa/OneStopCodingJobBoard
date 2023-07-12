@@ -10,6 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 import Main from './pages/Main';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Contact from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import JobPosting from './pages/JobPosting';
@@ -58,7 +59,11 @@ function App() {
             path="/login"
             element={<Login />}           
           />
-            <Route 
+          <Route 
+            path="/contact"
+            element={<Contact />}
+          />
+          <Route 
             path="/job/:jobId"
             element={<JobPosting />}           
           />

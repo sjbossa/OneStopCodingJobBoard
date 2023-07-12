@@ -1,43 +1,44 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import "./Signup.css";
 import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../utils/mutation';
+import { CONTACT_US } from '../utils/mutation'; // Assuming we have to build a mutation for contacting us...
 
-import Auth from '../utils/auth';
+const ContactUs = () => {
+  const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-const Login = (props) => {
-  const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+  const [contactUs, { error, data }] = useMutation(CONTACT_US);
 
-  // update state based on form input changes
   const handleChange = (event) => {
     const { name, value } = event.target;
 
     setFormState({
       ...formState,
-      [name]: value,
+      [name]: value
     });
   };
 
-  // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
+
     try {
-      const { data } = await login({
-        variables: { ...formState },
+      const { data } = await contactUs({
+        variables: { ...formState }
       });
 
-      Auth.login(data.login.token);
+      // Handle success if needed
     } catch (e) {
       console.error(e);
     }
 
-    // clear form values
     setFormState({
+      name: '',
       email: '',
-      password: '',
+      message: ''
     });
   };
 
@@ -45,29 +46,37 @@ const Login = (props) => {
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h3 className="card-header bg-dark text-light p-2">Login</h3>
+          <h3 className="card-header bg-dark text-light p-2">Contact Us</h3>
           <div className="card-body">
             {data ? (
               <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
+                Success! We will get back to you soon.{' '}
+                <Link to="/">Back to homepage.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
-                  placeholder="Your email"
+                  placeholder="Your Name"
+                  name="name"
+                  type="text"
+                  value={formState.name}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="Your Email"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
                 />
-                <input
+                <textarea
                   className="form-input"
-                  placeholder="******"
-                  name="password"
-                  type="password"
-                  value={formState.password}
+                  placeholder="Your Message"
+                  name="message"
+                  rows="5"
+                  value={formState.message}
                   onChange={handleChange}
                 />
                 <button
@@ -92,4 +101,4 @@ const Login = (props) => {
   );
 };
 
-export default Login;
+export default ContactUs;
