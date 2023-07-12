@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import { QUERY_JOB } from '../utils/queries';
@@ -33,9 +33,3 @@ const JobPosting = () => {
 };
 
 export default JobPosting;
-
-/*<div>
-<h1>{job._id}</h1>
-<h1>{job.description}</h1>
-<h1>{job.title}</h1>
-//</div>*/
