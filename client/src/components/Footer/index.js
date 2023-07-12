@@ -32,10 +32,26 @@ const Footer=()=>{
                     <div className="sb__footer-links_div">
                         <h4>Coming soon on</h4>
                         <div className="socialmedia">
-                            <p><img src={fb} alt="facebook"/></p>
-                            <p><img src={twitter} alt="twitter"/></p>
-                            <p><img src={linkedin} alt="linkedin"/></p>
-                            <p><img src={github} alt="github"/></p>
+                            <p>
+                                <a href="https://www.facebook.com">
+                                    <img src={fb} alt="facebook"/>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.twitter.com">
+                                    <img src={twitter} alt="twitter"/>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.linkedin.com">
+                                    <img src={linkedin} alt="linkedin"/>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.github.com">
+                                    <img src={github} alt="github"/>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
