@@ -11,7 +11,7 @@ One Stop Coding Job Board was developed by developers for developers who are ent
 We wanted a streamlined easy to use website for developers to find jobs and post jobs without having to sift through jobs that are not relivent to their career field. This platform is for developers and coders, we are very specialized 
 
 <img src="./assets/4.png" alt="Logo" title="Logo">
-<img src="./assets/card.png" alt="cards" title="cards">
+<img src="./assets/page.png" alt="cards" title="cards">
 <img src="./assets/contact.png" alt="contact page" title="contact page">
 <img src="./assets/signup.png" alt="sign-up page" title="sign-up page">
 
