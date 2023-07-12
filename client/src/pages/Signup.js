@@ -45,6 +45,7 @@ const Signup = (props) => {
           <div className="card">
             <h3 className="card-header bg-dark text-light p-2">Sign Up</h3>
             <div className="card-body">
+            <img src={require('./images/Signup.jpg')} alt="Logo" />
               {data ? (
                 <p>
                   Success! You may now head{' '}

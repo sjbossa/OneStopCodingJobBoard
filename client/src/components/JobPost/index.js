@@ -54,3 +54,6 @@ const JobForm = () => {
     </form>
   );
 };
+
+export default JobForm;
+
