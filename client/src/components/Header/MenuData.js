@@ -6,14 +6,14 @@ export const MenuData = [
       icon: "fa-solid fa-house-user"
     },
     {
-      title: "About",
+      title: "Meet The Team",
       url: "#",
       cName: "nav-links",
       icon: "fa-solid fa-circle-info"
     },
     {
-      title: "Service",
-      url: "#",
+      title: "Create Job",
+      url: "/createJob",
       cName: "nav-links",
       icon: "fa-solid fa-briefcase"
     },
