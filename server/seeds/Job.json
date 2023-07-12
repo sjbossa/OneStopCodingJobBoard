@@ -2,7 +2,11 @@
     {
       "title":"AS 400 RPG Application Developer",
       "description":"Software Development",
-      "skill":"Java/VB Script, Microsoft SQL Server development, CSS programming HTML programming"
+      "skill":"Java/VB Script, Microsoft SQL Server development, CSS programming HTML programming",
+      "maxExpectedSalary":100000,
+      "specification":"Front-End",
+      "minimumYearsRequired": 6,
+      "minimumEducationRequired":"Bachelors"
     },
     {
       "title":"Web Developer Front End",

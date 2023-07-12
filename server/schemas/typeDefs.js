@@ -12,6 +12,10 @@ const typeDefs = gql`
     _id: ID
     title: String!
     description: String!
+    maxExpectedSalary:Int!
+    specification:String!
+    minimumYearsRequired:Int!
+    minimumEducationRequired:String!
   }
 
   type Auth {

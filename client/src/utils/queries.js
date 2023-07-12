@@ -14,6 +14,10 @@ export const QUERY_JOB=gql`
             _id
             title
             description
+            maxExpectedSalary
+            specification
+            minimumYearsRequired
+            minimumEducationRequired
         }
 }`;
 
