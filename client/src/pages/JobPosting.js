@@ -24,9 +24,9 @@ const JobPosting = () => {
     <img src={require('./images/452.jpg')} alt="Logo" />
     <h2>{job.title}</h2>
     <h2>{job.description}</h2>
-    <h2>{job.maxExpectedSalary}</h2>
+    <h2>{"$ "}{job.maxExpectedSalary}</h2>
     <h2>{job.specification}</h2>
-    <h2>{job.minimumYearsRequired}</h2>
+    <h2>{job.minimumYearsRequired}{" Year(s)"}</h2>
     <h2>{job.minimumEducationRequired}</h2>
     <button
   className="btn btn-block btn-info"
