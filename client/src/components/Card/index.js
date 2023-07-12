@@ -1,8 +1,8 @@
 import React from "https://cdn.skypack.dev/react@17.0.1";
 import { Link } from 'react-router-dom';
 import './index.css';
-import logoImage from '../Card/images/45.jpg';
-import bottomImage from '../Card/images/2877459.jpg';
+import logoImage from '../Card/images/nerds.jpg';
+import bottomImage from '../Card/images/laughing.jpg';
 const JobCard = ({ jobs, title }) => {
   if (!jobs.length) {
     return <h3>No jobs have been posted yet.</h3>;
@@ -16,9 +16,9 @@ const JobCard = ({ jobs, title }) => {
           
           
         img={logoImage}
-          key={job._id}
-          title={job.title}
+        title={job.title}
           description={job.description}
+          key={job._id}
           id={job._id}
         />
       ))}
