@@ -14,8 +14,10 @@ import Contact from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import JobPosting from './pages/JobPosting';
-
+import JobForm from './pages/JobForm';
+import Profile from './pages/Profile';
 import './App.css';
+
 
 
 const httpLink = createHttpLink({
@@ -66,6 +68,18 @@ function App() {
           <Route 
             path="/job/:jobId"
             element={<JobPosting />}           
+          />
+            <Route 
+            path="/createJob"
+            element={<JobForm />}           
+          />
+          <Route 
+            path="/me" 
+            element={<Profile />} 
+          />
+          <Route 
+            path="/user/:userId" 
+            element={<Profile />} 
           />
         </Routes>
         </div>

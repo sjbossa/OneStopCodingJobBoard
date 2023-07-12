@@ -10,14 +10,18 @@ const userSchema = new Schema(
       trim: true
     },
     email: {
-        type: String,
-        required: true,
-      },
-      password: {
-        type: String,
-        required: true,
-      },
-
+      type: String,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    jobsApplied: [
+      {
+        type:String,
+      }
+    ]
   }
 );
 
