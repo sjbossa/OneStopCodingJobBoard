@@ -2,7 +2,7 @@ import React from "https://cdn.skypack.dev/react@17.0.1";
 import { Link } from 'react-router-dom';
 import './index.css';
 import logoImage from '../Card/images/nerds.jpg';
-import bottomImage from '../Card/images/laughing.jpg';
+import bottomImage from '../Card/images/blonde.png';
 const JobCard = ({ jobs, title }) => {
   if (!jobs.length) {
     return <h3>No jobs have been posted yet.</h3>;
