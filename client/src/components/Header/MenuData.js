@@ -7,7 +7,7 @@ export const MenuData = [
     },
     {
       title: "Meet The Team",
-      url: "#",
+      url: "/meetTheTeam  ",
       cName: "nav-links",
       icon: "fa-solid fa-circle-info"
     },

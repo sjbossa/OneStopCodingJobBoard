@@ -41,7 +41,6 @@ function Card(props) {
         <img className="card__image" src={img} alt="" />
         <h2 className="card__title">{title}</h2>
         <p className="card__description">{description}</p>
-        <p className="card__id">{id}</p>
       </div>
       <Link to={`/job/${id}`} className="card__btn">
         View Job

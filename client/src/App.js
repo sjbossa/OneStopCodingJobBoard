@@ -16,9 +16,9 @@ import Footer from './components/Footer';
 import JobPosting from './pages/JobPosting';
 import JobForm from './pages/JobForm';
 import Profile from './pages/Profile';
+import TeamInfo from './pages/teamInfo';
+
 import './App.css';
-
-
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -80,6 +80,10 @@ function App() {
           <Route 
             path="/user/:userId" 
             element={<Profile />} 
+          />
+          <Route 
+            path="/meetTheTeam" 
+            element={<TeamInfo />} 
           />
         </Routes>
         </div>
