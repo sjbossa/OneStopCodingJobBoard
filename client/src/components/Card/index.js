@@ -1,5 +1,7 @@
 import React from "https://cdn.skypack.dev/react@17.0.1";
 import './index.css';
+import logoImage from '../Card/images/45.jpg';
+import bottomImage from '../Card/images/2877459.jpg';
 const JobCard = ({ jobs, title }) => {
   if (!jobs.length) {
     return <h3>No jobs have been posted yet.</h3>;
@@ -12,7 +14,7 @@ const JobCard = ({ jobs, title }) => {
         <Card
           
           
-          img="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+        img={logoImage}
           key={job._id}
           title={job.title}
           description={job.description}
@@ -20,9 +22,8 @@ const JobCard = ({ jobs, title }) => {
       ))}
 
       <Card
-        img="https://images.unsplash.com/photo-1529928520614-7c76e2d99740?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-        title="Baked Cod with Vegetables"
-        description="Baked Cod with Vegetables. 30 minute meal!"
+        img={bottomImage}
+        titlebottomImage
       />
     </div>
   );
@@ -37,8 +38,8 @@ function Card(props) {
         <p className="card__id">{props.id}</p>
         <p className="card__description">{props.description}</p>
       </div>
-      <button className="card__btn">View Job</button>
     </div>
+
   );
 }
 
