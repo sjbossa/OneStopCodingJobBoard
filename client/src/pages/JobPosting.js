@@ -1,11 +1,8 @@
 import React from 'react';
-
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import "./Signup.css"
 import { QUERY_JOB } from '../utils/queries';
-
-
 
 const JobPosting = () => {
   const { jobId } = useParams();
@@ -22,9 +19,12 @@ const JobPosting = () => {
   }
 
   return (
+
   <div>
-    <h1>{job.description}</h1>
-    <h1>{job.title}</h1>
+    <img src={require('./images/45.jpg')} alt="Logo" />
+    <h2>{job.title}</h2>
+    <h2>{job.description}</h2>
+    <h2>{job._id}</h2>
     <button
   className="btn btn-block btn-info"
   style={{ cursor: 'pointer' }}

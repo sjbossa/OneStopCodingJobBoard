@@ -48,6 +48,7 @@ const ContactUs = () => {
         <div className="card">
           <h3 className="card-header bg-dark text-light p-2">Contact Us</h3>
           <div className="card-body">
+          <img src={require('./images/ContactUs.jpg')} alt="Logo" />
             {data ? (
               <p>
                 Success! We will get back to you soon.{' '}
