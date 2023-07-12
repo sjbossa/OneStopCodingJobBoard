@@ -45,8 +45,9 @@ const Login = (props) => {
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h3 className="card-header bg-dark text-light p-2">Login</h3>
+          <h3 className="card-header bg-dark text-light p-2"> </h3>
           <div className="card-body">
+          <img src={require('./images/Login2.jpg')} alt="Logo" />
             {data ? (
               <p>
                 Success! You may now head{' '}
