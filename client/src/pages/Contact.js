@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import "./Signup.css";
 import { useMutation } from '@apollo/client';
 import { CONTACT_US } from '../utils/mutation'; // Assuming we have to build a mutation for contacting us...
 
@@ -76,7 +77,7 @@ const ContactUs = () => {
                   className="form-input"
                   placeholder="Your Message"
                   name="message"
-                  rows="5"
+                  rows="8"
                   value={formState.message}
                   onChange={handleChange}
                 />

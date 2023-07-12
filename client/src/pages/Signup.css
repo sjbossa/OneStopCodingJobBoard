@@ -1,8 +1,8 @@
-.signup-input, .form-input {
+.signup-input, .form-input, textarea {
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: relative;
+    display:inline-table;
     border: 1px solid #525f72;
     border-radius: 4px;
     box-sizing: border-box;
