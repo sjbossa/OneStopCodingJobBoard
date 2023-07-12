@@ -24,7 +24,6 @@ const JobPosting = () => {
 
   return (
   <div>
-    <h1>{job._id}</h1>
     <h1>{job.description}</h1>
     <h1>{job.title}</h1>
     <button>apply now</button>
