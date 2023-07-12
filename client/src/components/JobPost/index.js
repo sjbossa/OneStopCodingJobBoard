@@ -131,8 +131,11 @@ const JobForm = () => {
           onChange={(e) => setDescription(e.target.value)}
         />
       </div>
-      <button type="submit" disabled={loading}>
-        {loading ? 'Creating Job...' : 'Create Job'}
+      <button 
+  className="btn btn-block btn-info" 
+  type="submit" disabled={loading}
+  style={{ cursor: 'pointer' }}>
+  {loading ? 'Creating Job...' : 'Create Job'}
       </button>
       {error && <p>Error: {error.message}</p>}
     </form>
