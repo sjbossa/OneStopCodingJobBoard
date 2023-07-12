@@ -3,19 +3,63 @@
       "title":"AS 400 RPG Application Developer",
       "description":"Software Development",
       "skill":"Java/VB Script, Microsoft SQL Server development, CSS programming HTML programming",
-      "maxExpectedSalary":100000,
-      "specification":"Front-End",
-      "minimumYearsRequired": 6,
-      "minimumEducationRequired":"Bachelors"
+      "maxExpectedSalary":"$110,000.00",
+      "specification":"Full-Stack",
+      "minimumYearsRequired":"4 years",
+      "minimumEducationRequired":"Bachelors Degree in Computer Science"
     },
     {
-      "title":"Web Developer Front End",
+      "title":"Entry-Level Web Developer",
       "description":"Web Development",
-      "skill":"HTML programming, CSS/SCSS programming, Java/VB Script programming, Experience with responsive web design"
+      "skill":"HTML programming, CSS/SCSS programming, Java/VB Script programming, Experience with responsive web design",
+      "maxExpectedSalary":"$72,600.00",
+      "specification":"Front-End",
+      "minimumYearsRequired":"1 year",
+      "minimumEducationRequired":"BA in Computer Science, or applicable certifications"
     },
     {
-      "title":"Front End Developer",
+      "title":"Software Developer",
       "description":"Software Development",
-      "skill":"Knowledge of Java development language, SQL Database experience, knowledge using restful web services"
+      "skill":"Knowledge of Java development language, SQL Database experience, knowledge using restful web services",
+      "maxExpectedSalary":"$96,800.00",
+      "specification":"Full-Stack",
+      "minimumYearsRequired":"4 years",
+      "minimumEducationRequired":"Bachelors in CS"
+    },
+    {
+      "title":"Technology Manager Web Developer",
+      "description":"Software Development",
+      "skill":"Critical thinking and reasoning to solve problems, Ability to focus on a goal and achieve results, Perform work accurately and thoroughly",
+      "maxExpectedSalary":"$145,500.00",
+      "specification":"Full-Stack",
+      "minimumYearsRequired":"6 years",
+      "minimumEducationRequired":"Bachelors Degree in Computer Science, or equivalent"
+    },
+    {
+      "title":"Web Developer Front-End",
+      "description":"Web Development",
+      "skill":"HTML programming, CSS/SCSS programming, Java/VB Script programming, Experience with responsive web design",
+      "maxExpectedSalary":"$108,600.00",
+      "specification":"Front-End",
+      "minimumYearsRequired":"3 to 5 years of experience in front-end coding and or other coding disciplines",
+      "minimumEducationRequired":"BA in Computer Science, Web development or related and five years work experience in web development"
+    },
+    {
+      "title":"Back-End Developer",
+      "description":"Software Development",
+      "skill":"Knowledge of Java development language, SQL Database experience, knowledge using restful web services",
+      "maxExpectedSalary":"$110,000.00",
+      "specification":"Back-End",
+      "minimumYearsRequired":"2 to 4 years",
+      "minimumEducationRequired":"any equivalent combination of education and experience"
+    },
+    {
+      "title":"Java Full-Stack Developer",
+      "description":"Software Development",
+      "skill":"Vue.js, Node JS, HTML5, CSS, Review of Code and Design knowledge",
+      "maxExpectedSalary":"$115,700.00",
+      "specification":"Back-End Focus",
+      "minimumYearsRequired":"3 to 5 years",
+      "minimumEducationRequired":"BA in CS,  equivalent certifications and experience"
     }
   ]
