@@ -19,6 +19,7 @@
      color: #fff;
      justify-self: start;
      cursor: pointer;
+     padding-bottom: 20px;
    }
    
    .nav-menu {
@@ -33,7 +34,7 @@
    
    .nav-links {
      text-decoration: none;
-     color: #fff;
+     color: white;
      padding: 0.7rem 1rem;
      white-space: nowrap;
    
@@ -44,7 +45,7 @@
    }
    
    .nav-links:hover {
-     background: #2557a9;
+     background: #776c6c;
      border-radius: 4px;
      transition: all 0,2s ease-in-out;
    }
@@ -61,12 +62,18 @@
    .nav-links-mobile {
      padding: 0.5rem 1rem;
      white-space: nowrap;
-     background-color: #fafafa;
+     background-color: #525f72;
      border-radius: 3px;
      text-decoration: none;
      font-size: 1rem;
      font-weight: 500;
-     color: #222;
+     color: white;
+   }
+
+   .nav-links-mobile:hover {
+    background-color: #63788f; 
+  color: white;
+
    }
    
    @media screen and (max-width: 850px) {

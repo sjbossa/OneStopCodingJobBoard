@@ -1,4 +1,4 @@
-.signup-input, .form-input {
+.signup-input {
     width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -26,6 +26,6 @@
 }
 
 .btn:hover {
-  background-color: #63788f; 
+  background-color: #48b64c; /* Green */
   color: white;
 }
